@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenWTHereAsAdmin]
+"MUIVerb"="ターミナルで開く（管理者）"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenWTHereAsAdmin\command]
+@="wscript \"C:\\tools\\open_wt_as_admin.vbs\" \"%V\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWTHereAsAdmin]
+"MUIVerb"="ターミナルで開く（管理者）"
+"HasLUAShield"=""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenWTHereAsAdmin\command]
+@="wscript \"C:\\tools\\open_wt_as_admin.vbs\" \"%V\""
