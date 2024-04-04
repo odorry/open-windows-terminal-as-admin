@@ -1,0 +1,8 @@
+■ Windows ターミナルを管理者モードで開く(WSH)
+wscript C:\tools\open_wt_as_admin.vbs "%V"
+
+■ Windows ターミナルを管理者モードで開く
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy unrestricted -Command "Start-Process -Verb RunAs wt -ArgumentList '-d', '%V%'"
+
+■ PowerShell を管理者モードで開く
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy unrestricted -Command "Start-Process -Verb RunAs powershell -ArgumentList '-NoExit', '-Command Set-Location %V%'"
